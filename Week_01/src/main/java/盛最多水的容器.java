@@ -1,8 +1,5 @@
 /**
- * Created by IntelliJ IDEA
- * User: yyzz
- * Date: 2020/9/7
- * Time: 22:36
+ * leetcode做题-盛最多水的容器  https://leetcode-cn.com/problems/container-with-most-water/
  */
 public class 盛最多水的容器 {
     public int maxArea(int[] height) {

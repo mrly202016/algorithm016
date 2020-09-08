@@ -1,8 +1,5 @@
 /**
- * Created by IntelliJ IDEA
- * User: yyzz
- * Date: 2020/9/7
- * Time: 22:06
+ * leetcode做题-爬楼梯 https://leetcode-cn.com/problems/climbing-stairs/
  */
 public class 爬楼梯 {
     public static void main(String[] args) {

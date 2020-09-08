@@ -1,8 +1,5 @@
 /**
- * Created by IntelliJ IDEA
- * User: yyzz
- * Date: 2020/9/7
- * Time: 22:26
+ * leetcode做题-移动零  https://leetcode-cn.com/problems/move-zeroes/
  */
 public class 移动零 {
     public void moveZeroes(int[] nums) {
