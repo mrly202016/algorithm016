@@ -57,45 +57,40 @@ PriorityQueue是一个小顶堆，通过构造时传入比较器或按自然顺�
 
 数组题里面有些用的比较多的方法是双指针，其余就是审题和数组遍历逻辑的顺序
 
-#### 爬楼梯
-
-因为上最后一级台阶要么走一步，要么走两步，所以类似Fibonacci，也就是公式：
-> f(n)&nbsp;=&nbsp;f(n-1)&nbsp;+&nbsp;f(n-2)  
-
-所以有2种解法：
-* 递归求解
-* 滚动数组
-
-###### 递归求解的时间复杂度分析
-
-根据那个公式可以很容易画出二叉树，这个公式得出的二叉树深度为**n-1**，所以时间复杂度最大为2^(n-1)-2，也即2^n
-
-###### 滚动数组的时间复杂度分析
-
-很容易看出时间复杂度是o(n)，而且空间复杂度是o(1)，巧妙的运用了临时变量。
-
-
-#### 盛水最多的容器
-
-双指针，2头缩进
-
-#### 移动零
-
-双指针
-
-#### 两数之和
-
-空间换时间，升维，转化解题思路，把找2转化为求某数是否存在
-
-#### 加一
-
-这个题没有什么好方法，就是审题吧，如果当成数字来做，极端情况会越界，还是看国际版的解法
-
-#### 三数之和
-
-这个是目前数组题里最难的，也是代码实现行数最多的。区别于两数之和，它需要遍历目标target，没有采用hash。重点是遍历逻辑和去重方法，指针移动的时机和和盛最多水的容器类似。也是相当于双指针
-
+| 题目名 | 看Leetcode题解心得 | Leetcode链接 |
+| :- | :- | :- |
+| 移动零 | 双指针，用一个记录0的位置 | https://leetcode-cn.com/problems/move-zeroes/ |
+| 爬楼梯 | 因为上最后一级台阶要么走一步，要么走两步，所以类似Fibonacci，也就是公式：f(n)&nbsp;=&nbsp;f(n-1)&nbsp;+&nbsp;f(n-2)。递归解法得出的二叉树深度为**n-1**，所以时间复杂度最大为2^(n-1)-2，也即2^n。滚动数组解法很容易看出时间复杂度是o(n)，而且空间复杂度是o(1)，巧妙的运用了临时变量。 | https://leetcode-cn.com/problems/climbing-stairs/ |
+| 盛水最多的容器 | 双指针，2头缩进 | https://leetcode-cn.com/problems/container-with-most-water/ |
+| 两数之和 | 空间换时间，升维，转换解题思路，把找2数和转化为求某数是否存在 | https://leetcode-cn.com/problems/two-sum/ |
+| 三数之和 | 区别于2数之和，它需要遍历目标target，没有采用hash。重点是遍历逻辑和去重方法，指针移动的时机和和盛最多水的容器类似。也是相当于双指针 | https://leetcode-cn.com/problems/3sum/ |
+| 加一 |  | https://leetcode-cn.com/problems/plus-one/ |
+| 旋转数组 |  | https://leetcode-cn.com/problems/rotate-array/ |
+| 合并两个有序数组 |  | https://leetcode-cn.com/problems/merge-sorted-array/ |
+| 接雨水 | 双指针移法类似盛最多水的容器，计算垂直方向面积 | https://leetcode-cn.com/problems/trapping-rain-water/ |
+| 猜数字游戏 |  | https://leetcode-cn.com/problems/bulls-and-cows/ |
+| 接雨水 | 双指针，类似盛水最多容器，算垂直面积 | https://leetcode-cn.com/problems/trapping-rain-water/ |
 
 ## 链表题
 
- 
+| 题目名 | 看Leetcode题解心得 | Leetcode链接 |
+| :- | :- | :- |
+| 反转链表 | 有递归和迭代2种做法，思路就是设置一个变量保存前继节点，将当前节点指向前继节点，然后next迭代或递归 | https://leetcode-cn.com/problems/reverse-linked-list/ |
+| 两两交换链表中的节点 | 别人写的递归很巧妙 | https://leetcode-cn.com/problems/swap-nodes-in-pairs/ |
+| 环形链表 |  | https://leetcode-cn.com/problems/linked-list-cycle/ |
+| 环形链表 II | 数学证明很烧脑 | https://leetcode-cn.com/problems/linked-list-cycle-ii/ |
+| K个一组翻转链表 | 用到了局部的反转链表，是两两交换链表中节点的升级版 | https://leetcode-cn.com/problems/reverse-nodes-in-k-group/ |
+| 合并两个有序链表 |  | https://leetcode-cn.com/problems/merge-two-sorted-lists/ |
+
+## 栈题
+
+| 题目名 | 看Leetcode题解心得 | Leetcode链接 |
+| :- | :- | :- |
+| 有效的括号 |  | https://leetcode-cn.com/problems/valid-parentheses/ |
+| 柱状图中最大的矩形 | 以高度为遍历顺序，找左右边界 | https://leetcode-cn.com/problems/largest-rectangle-in-histogram/ |
+
+## 队列题
+
+| 题目名 | 看Leetcode题解心得 | Leetcode链接 |
+| :- | :- | :- |
+| 滑动窗口最大值 | 滑动窗口也就是个动态数组，动态数组的题可以用队列去解决。因为是滑动的，动态的，所以只索引一个最大值不行。解题思路是用队列头部始终保持最大值，比头部小的往队列赛，但要始终保持不超过k个长度的队列，遇到比尾部大的，就依次比较删除小的元素，始终保证k个窗口内元素单调递增。 | https://leetcode-cn.com/problems/sliding-window-maximum/ |
