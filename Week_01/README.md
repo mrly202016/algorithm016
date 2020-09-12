@@ -1,5 +1,50 @@
 # 学习总结
 
+## 课后作业
+
+1. 用新API改写Deque代码
+
+```java
+class DequeNewApi {
+    public static void main(String[] args){
+        Deque<String> deque=new LinkedList<>();
+
+        deque.addFirst("a");
+        deque.addFirst("b");
+        deque.addFirst("c");
+        System.out.println(deque);
+
+        String str=deque.peekFirst();
+        System.out.println(str);
+        System.out.println(deque);
+    
+        while (!deque.isEmpty()){
+            System.out.println(deque.removeFirst());
+        }
+    }
+}
+```
+
+2. 分析Queue源代码
+
+| API | 说明 |
+| :- | :- |
+| add | 在容量允许的情况下添加元素成功返回true，否则就会抛异常 |
+| offer | 在容量允许的情况下添加元素成功返回true，否则返回false，不抛异常 |
+| remove | 删除并返回队列头元素，队列为空时抛异常 |
+| poll | 删除并返回队列头元素，队列为空时返回null |
+| element | 返回队列头元素但不删除，队列为空时抛异常 |
+| peek | 返回队列头元素但不删除，队列为空时返回null |
+
+3. 分析PriorityQueue源代码
+
+PriorityQueue是一个小顶堆，通过构造时传入比较器或按自然顺序排序来实现元素大小的比较。
+
+| API | 说明 |
+| :- | :- |
+| add/offer | 插入非空元素，如有必要就扩容，自下而上与父节点比较大小，小于就交换，返回true或false |
+| remove/poll | 将队列头元素弹出，将队尾元素移到队首，自上而下与子节点比较大小 |
+
 ## 跳跃表
 
 跳跃表的出现是为了解决链表查询时间复杂度的问题，方法是通过增加多级索引。假设有n个节点，每2个节点增加一级索引，在一级索引之上，每2个节点再增加一个索引，依次类推，最高级索引处有2个节点，那每级索引的节点数就是：
