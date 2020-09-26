@@ -34,6 +34,7 @@
 | [N叉树的前序遍历](https://leetcode-cn.com/problems/n-ary-tree-preorder-traversal/description/) | 跟二叉树遍历类似，只是有多个子节点而已 |
 | [最小的k个数](https://leetcode-cn.com/problems/zui-xiao-de-kge-shu-lcof/) | 用堆做 |
 | [前K个高频元素](https://leetcode-cn.com/problems/top-k-frequent-elements/) | 很容易想到hashmap计数，然后用最小堆。桶排序的后面再看todo |
+| [二叉树的最大深度](https://leetcode-cn.com/problems/maximum-depth-of-binary-tree/) | 简单的递归可做，但是扩展一下，可以尝试BFS和DFS |
 
 ## 数组题
 | 题目名 | 看Leetcode题解心得 |
