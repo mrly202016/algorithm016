@@ -20,3 +20,8 @@
 | 题目名 | 看Leetcode题解心得 |
 | :- | :- |
 | [括号生成](https://leetcode-cn.com/problems/generate-parentheses/) | 抽象思维，找重复子问题，处理的时候加限制条件 |
+
+## 数组题
+| 题目名 | 看Leetcode题解心得 |
+| :- | :- |
+| [第k个数](https://leetcode-cn.com/problems/get-kth-magic-number-lcci/) | 这道题跟[丑数](https://leetcode-cn.com/problems/chou-shu-lcof/)差不多 |
