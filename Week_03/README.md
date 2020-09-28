@@ -25,3 +25,10 @@
 | 题目名 | 看Leetcode题解心得 |
 | :- | :- |
 | [第k个数](https://leetcode-cn.com/problems/get-kth-magic-number-lcci/) | 这道题跟[丑数](https://leetcode-cn.com/problems/chou-shu-lcof/)差不多 |
+
+## 回溯剪枝题
+| 题目名 | 看Leetcode题解心得 |
+| :- | :- |
+| [组合](https://leetcode-cn.com/problems/combinations/) | [这个大哥的解题思路很清晰，把回溯讲的很清楚](https://leetcode-cn.com/problems/combinations/solution/hui-su-suan-fa-jian-zhi-python-dai-ma-java-dai-ma-/) |
+| [全排列](https://leetcode-cn.com/problems/permutations/) | [官网解法交换](https://leetcode-cn.com/problems/permutations/solution/quan-pai-lie-by-leetcode-solution-2/)指针从depth位置往后移，将depth位置和后面比他大位置的数字交换，就是一种可能的组合，当前i如果就是depth位置，算是第一种可能，则不交换 |
+| [全排列II](https://leetcode-cn.com/problems/permutations-ii/) | 好好体会官方解法关于去重的逻辑 |
