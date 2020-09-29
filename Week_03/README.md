@@ -32,3 +32,11 @@
 | [组合](https://leetcode-cn.com/problems/combinations/) | [这个大哥的解题思路很清晰，把回溯讲的很清楚](https://leetcode-cn.com/problems/combinations/solution/hui-su-suan-fa-jian-zhi-python-dai-ma-java-dai-ma-/) |
 | [全排列](https://leetcode-cn.com/problems/permutations/) | [官网解法交换](https://leetcode-cn.com/problems/permutations/solution/quan-pai-lie-by-leetcode-solution-2/)指针从depth位置往后移，将depth位置和后面比他大位置的数字交换，就是一种可能的组合，当前i如果就是depth位置，算是第一种可能，则不交换 |
 | [全排列II](https://leetcode-cn.com/problems/permutations-ii/) | 好好体会官方解法关于去重的逻辑 |
+| [子集](https://leetcode-cn.com/problems/subsets/) | 跟组合差不多，区别就是path中每一个节点都存 |
+| [N皇后](https://leetcode-cn.com/problems/n-queens/) | 主副对角线的规律很巧妙 |
+
+## 分治题
+| 题目名 | 看Leetcode题解心得 |
+| :- | :- |
+| [Pow(x, n)](https://leetcode-cn.com/problems/powx-n/) | 注意n<0的情况处理，以及体会loop的解法 |
+| [多数元素](https://leetcode-cn.com/problems/majority-element/description/) | 分治法想不到，官网的投票法很巧妙 |
