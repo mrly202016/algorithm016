@@ -2,7 +2,7 @@ import java.util.LinkedList;
 import java.util.Queue;
 
 /**
- * 扫雷游戏
+ * 扫雷游戏  https://leetcode-cn.com/problems/minesweeper/
  */
 public class 扫雷游戏 {
     public char[][] updateBoard_BFS(char[][] board, int[] click) {
@@ -35,7 +35,7 @@ public class 扫雷游戏 {
     }
 
     private void bfs(int colLen, Queue<Integer> queue, char[][] board, int[] dr, int[] dc) {
-        boolean[][] visited=new boolean[board.length][colLen];
+//        boolean[][] visited=new boolean[board.length][colLen];
         while (!queue.isEmpty()){
             Integer combine=queue.poll();
             int i=combine/colLen;
@@ -62,12 +62,14 @@ public class 扫雷游戏 {
                     int tr=i+dr[k];
                     int tc=j+dc[k];
 
-                    if(tr<0||tr>=board.length||tc<0||tc>=colLen||board[tr][tc]!='E'||visited[tr][tc]){
+                    if(tr<0||tr>=board.length||tc<0||tc>=colLen){
                         continue;
                     }
 
-                    queue.offer(tr*colLen+tc);
-                    visited[tr][tc]=true;
+                    if(board[tr][tc]=='E'){
+                        queue.offer(tr*colLen+tc);
+                        board[tr][tc]='B';//这个很妙
+                    }
                 }
             }
         }
