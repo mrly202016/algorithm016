@@ -22,3 +22,9 @@
 | 题目名 | 看Leetcode题解心得 |
 | :- | :- |
 | [零钱兑换](https://leetcode-cn.com/problems/coin-change/) | 从最基本的回溯到自顶向下的动态规划，再到自下而上的动态规划（推荐），再到回溯+剪枝 |
+
+## 二分查找题
+| 题目名 | 看Leetcode题解心得 |
+| :- | :- |
+| [搜索旋转排序数组](https://leetcode-cn.com/problems/search-in-rotated-sorted-array/) | 这个题主要是区分mid在左半有序区还是右半有序区，再然后判断target的范围 |
+| [寻找旋转排序数组中的最小值](https://leetcode-cn.com/problems/find-minimum-in-rotated-sorted-array/) | 根据mid，从2端缩进 |
