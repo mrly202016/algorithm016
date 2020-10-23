@@ -40,10 +40,10 @@ public class 青蛙过河 {
                 //也即有没有dp[i][step]、dp[i][step+1]、dp[i][step-1]能不能到达
                 //再去除数组边界条件即可
                 step=stones[j]-stones[i];
-                if(step<dp[0].length){
+                if(step<=j){//第二维数组最大长度同理stones.length
                     if(step>=1) dp[j][step]=dp[j][step]||dp[i][step-1];
                     dp[j][step]=dp[j][step]||dp[i][step];
-                    if(step<dp[0].length-1) dp[j][step]=dp[j][step]||dp[i][step+1];
+                    if(step<=j-1) dp[j][step]=dp[j][step]||dp[i][step+1];
                     if(j==stones.length-1&&dp[j][step]) return true;
                 }
             }
