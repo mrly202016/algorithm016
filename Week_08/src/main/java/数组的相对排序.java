@@ -1,5 +1,3 @@
-package PACKAGE_NAME;
-
 /**
  * Created by IntelliJ IDEA
  * User: yyzz
@@ -7,4 +5,7 @@ package PACKAGE_NAME;
  * Time: 18:09
  */
 public class 数组的相对排序 {
+    public int[] relativeSortArray(int[] arr1, int[] arr2) {
+
+    }
 }

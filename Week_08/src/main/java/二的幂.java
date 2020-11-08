@@ -1,10 +1,13 @@
-package PACKAGE_NAME;
-
 /**
- * Created by IntelliJ IDEA
- * User: yyzz
- * Date: 2020/11/4
- * Time: 15:59
+ * 2的幂  https://leetcode-cn.com/problems/power-of-two/
  */
 public class 二的幂 {
+    public boolean isPowerOfTwo(int n) {
+        int count=0;
+        while(n>0){
+            n&=n-1;
+            count++;
+        }
+        return count==1;
+    }
 }
